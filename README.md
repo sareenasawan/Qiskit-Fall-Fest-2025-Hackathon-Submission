@@ -1,9 +1,14 @@
 # Qiskit-Fall-Fest-2025-Hackathon-Submission
 Quantum Game Design Challenge: Quantum Tic-Tac-Toe (Qic-Qac-Qoe)
 
+# Team Members:
+Sareena Awan, Steffen Zylstra
+
+# The Prompt
+
 Concepts in quantum mechanics, such as superposition, entanglement, and measurement are difficult to visualize and understand, which inspired us to make this educational video game. It is influenced by the classic childhood game "Tic-Tac-Toe" to demonstrate these concepts visually in a fun and interactive way. 
 
-Link to video: https://youtu.be/qrZfYIQOVgY
+# Link to video: https://youtu.be/qrZfYIQOVgY
 
 # References:
 1. OpenAI. (2025). ChatGPT (GPT-5) [Large language model]. https://chat.openai.com/
