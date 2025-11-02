@@ -6,3 +6,4 @@ Concepts in quantum mechanics, such as superposition, entanglement, and measurem
 # References:
 1. OpenAI. (2025). ChatGPT (GPT-5) [Large language model]. https://chat.openai.com/
 2. Music track: Gameboy by Walen, Source: https://freetouse.com/music, No Copyright Vlog Music for Videos
+3. Colophon Foundry. (2016). Space Mono [Font]. SIL Open Font License v1.1. https://github.com/googlefonts/spacemono
