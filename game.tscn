@@ -1,0 +1,153 @@
+[gd_scene load_steps=4 format=3 uid="uid://birlc6nfldhjn"]
+
+[ext_resource type="PackedScene" uid="uid://dejxhjbqgkfaa" path="res://QQQgridsquare.tscn" id="1_evmyr"]
+[ext_resource type="Script" path="res://game.gd" id="1_tkke4"]
+[ext_resource type="PackedScene" uid="uid://cr5y2ty2p12mm" path="res://option.tscn" id="3_vukfp"]
+
+[node name="game" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_tkke4")
+
+[node name="bg" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="TurnBackground" type="ColorRect" parent="."]
+layout_mode = 0
+offset_left = -11.0
+offset_top = 797.0
+offset_right = 806.0
+offset_bottom = 1196.0
+color = Color(0, 0, 0, 1)
+
+[node name="MainGrid" type="GridContainer" parent="."]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 16.0
+offset_top = 14.0
+offset_right = -476.0
+offset_bottom = 322.0
+grow_horizontal = 2
+scale = Vector2(2.5, 2.5)
+columns = 3
+
+[node name="0_0" parent="MainGrid" instance=ExtResource("1_evmyr")]
+layout_mode = 2
+size_flags_horizontal = 0
+
+[node name="0_1" parent="MainGrid" instance=ExtResource("1_evmyr")]
+layout_mode = 2
+
+[node name="0_2" parent="MainGrid" instance=ExtResource("1_evmyr")]
+layout_mode = 2
+
+[node name="1_0" parent="MainGrid" instance=ExtResource("1_evmyr")]
+layout_mode = 2
+
+[node name="1_1" parent="MainGrid" instance=ExtResource("1_evmyr")]
+layout_mode = 2
+
+[node name="1_2" parent="MainGrid" instance=ExtResource("1_evmyr")]
+layout_mode = 2
+
+[node name="2_0" parent="MainGrid" instance=ExtResource("1_evmyr")]
+layout_mode = 2
+
+[node name="2_1" parent="MainGrid" instance=ExtResource("1_evmyr")]
+layout_mode = 2
+
+[node name="2_2" parent="MainGrid" instance=ExtResource("1_evmyr")]
+layout_mode = 2
+
+[node name="collapse" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -133.0
+offset_bottom = -19.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_font_sizes/font_size = 70
+text = "Collapse!"
+
+[node name="FunctionOptions" type="GridContainer" parent="."]
+layout_mode = 0
+offset_left = 7.0
+offset_top = 813.0
+offset_right = 969.0
+offset_bottom = 1115.0
+scale = Vector2(0.82, 0.82)
+mouse_filter = 2
+theme_override_constants/h_separation = 28
+columns = 3
+
+[node name="0" parent="FunctionOptions" instance=ExtResource("3_vukfp")]
+layout_mode = 2
+
+[node name="1" parent="FunctionOptions" instance=ExtResource("3_vukfp")]
+layout_mode = 2
+
+[node name="2" parent="FunctionOptions" instance=ExtResource("3_vukfp")]
+layout_mode = 2
+
+[node name="TurnLabel" type="Label" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 5.0
+offset_top = 1055.0
+offset_right = 45.0
+offset_bottom = 1130.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 50
+
+[node name="highlight" type="ColorRect" parent="."]
+visible = false
+layout_mode = 0
+offset_left = -14.0
+offset_top = 783.0
+offset_right = 811.0
+offset_bottom = 1202.0
+color = Color(0, 0, 0, 1)
+
+[node name="winLabel" type="Label" parent="highlight"]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -151.5
+offset_bottom = 30.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 40
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button" type="Button" parent="highlight"]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = 39.5
+offset_bottom = 122.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 50
+text = "Play again?"
+
+[connection signal="pressed" from="collapse" to="." method="_on_collapse_pressed"]
+[connection signal="pressed" from="highlight/Button" to="." method="_on_button_pressed"]

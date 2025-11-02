@@ -1,0 +1,57 @@
+[gd_scene load_steps=4 format=3 uid="uid://cr5y2ty2p12mm"]
+
+[ext_resource type="PackedScene" uid="uid://bnu6wn5s1edxf" path="res://QQQselectsquare.tscn" id="1_b0jrs"]
+[ext_resource type="Script" path="res://option.gd" id="1_nmx82"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fil60"]
+
+[node name="Button" type="Button"]
+custom_minimum_size = Vector2(300, 300)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -500.0
+offset_bottom = -900.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/hover = SubResource("StyleBoxFlat_fil60")
+script = ExtResource("1_nmx82")
+func_map = [0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+[node name="GridContainer" type="GridContainer" parent="."]
+layout_mode = 0
+offset_left = 3.0
+offset_top = 3.0
+offset_right = 43.0
+offset_bottom = 43.0
+mouse_filter = 2
+theme_override_constants/h_separation = -2
+theme_override_constants/v_separation = -2
+columns = 3
+
+[node name="0_0" parent="GridContainer" instance=ExtResource("1_b0jrs")]
+layout_mode = 2
+
+[node name="0_1" parent="GridContainer" instance=ExtResource("1_b0jrs")]
+layout_mode = 2
+
+[node name="0_2" parent="GridContainer" instance=ExtResource("1_b0jrs")]
+layout_mode = 2
+
+[node name="1_0" parent="GridContainer" instance=ExtResource("1_b0jrs")]
+layout_mode = 2
+
+[node name="1_1" parent="GridContainer" instance=ExtResource("1_b0jrs")]
+layout_mode = 2
+
+[node name="1_2" parent="GridContainer" instance=ExtResource("1_b0jrs")]
+layout_mode = 2
+
+[node name="2_0" parent="GridContainer" instance=ExtResource("1_b0jrs")]
+layout_mode = 2
+
+[node name="2_1" parent="GridContainer" instance=ExtResource("1_b0jrs")]
+layout_mode = 2
+
+[node name="2_2" parent="GridContainer" instance=ExtResource("1_b0jrs")]
+layout_mode = 2

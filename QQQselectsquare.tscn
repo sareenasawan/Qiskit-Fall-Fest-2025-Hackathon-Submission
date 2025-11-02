@@ -1,0 +1,64 @@
+[gd_scene load_steps=2 format=3 uid="uid://bnu6wn5s1edxf"]
+
+[ext_resource type="Script" path="res://QQQselectsquare.gd" id="1_h00lw"]
+
+[node name="ColorRect" type="ColorRect"]
+custom_minimum_size = Vector2(100, 100)
+offset_right = 40.0
+offset_bottom = 40.0
+mouse_filter = 2
+script = ExtResource("1_h00lw")
+
+[node name="ColorRect2" type="ColorRect" parent="."]
+custom_minimum_size = Vector2(7, 7)
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 93.0
+offset_bottom = 100.0
+grow_horizontal = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 1)
+
+[node name="ColorRect3" type="ColorRect" parent="."]
+custom_minimum_size = Vector2(7, 7)
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 93.0
+offset_bottom = 100.0
+grow_horizontal = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 1)
+
+[node name="Label" type="Label" parent="."]
+texture_filter = 3
+layout_mode = 0
+offset_left = 7.0
+offset_top = 7.0
+offset_right = 93.0
+offset_bottom = 93.0
+theme_override_font_sizes/font_size = 40
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ColorRect4" type="ColorRect" parent="."]
+custom_minimum_size = Vector2(7, 7)
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_right = -93.0
+offset_bottom = 100.0
+grow_horizontal = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 1)
+
+[node name="ColorRect5" type="ColorRect" parent="."]
+custom_minimum_size = Vector2(7, 7)
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 7.0
+grow_horizontal = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 1)

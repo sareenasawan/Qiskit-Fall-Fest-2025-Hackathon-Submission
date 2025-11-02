@@ -1,0 +1,88 @@
+[gd_scene load_steps=4 format=3 uid="uid://cxrvjk55tlmck"]
+
+[ext_resource type="Script" path="res://main.gd" id="1_wr31g"]
+[ext_resource type="Texture2D" uid="uid://cw7y2jkykgnkc" path="res://Screenshot 2025-11-02 at 4.01.22 PM.png" id="2_qtp1v"]
+[ext_resource type="Texture2D" uid="uid://bu60g46rfs8ch" path="res://Screenshot 2025-11-02 at 4.03.15 PM.png" id="3_178tx"]
+
+[node name="main" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_wr31g")
+
+[node name="bg" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="start" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -145.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_font_sizes/font_size = 100
+text = "Start"
+
+[node name="title" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 149.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 100
+text = "Qic-Qac-Qoe"
+horizontal_alignment = 1
+
+[node name="Tooltip1" type="Label" parent="."]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 181.0
+offset_right = 672.0
+offset_bottom = 466.0
+theme_override_font_sizes/font_size = 30
+text = "In Qic-Qac-Qoe, the 
+squares are entangled! 
+The number shown in each 
+grid is that square's 
+probability of collapsing 
+into a one when observed."
+
+[node name="Tooltip2" type="Label" parent="."]
+layout_mode = 0
+offset_left = 26.0
+offset_top = 512.0
+offset_right = 746.0
+offset_bottom = 1037.0
+theme_override_font_sizes/font_size = 30
+text = "Get three in a row!
+Red = 1's
+Blue = 0's
+Each turn, pick one of three 
+\"functions\" to shift the entanglement of 
+the system. 
+When you like your odds,
+press \"Collapse!\" on your
+turn to observe the qubits 
+and see who won!
+Good luck!"
+
+[node name="Screenshot2025-11-02At4_01_22 pm" type="Sprite2D" parent="."]
+position = Vector2(658, 312)
+texture = ExtResource("2_qtp1v")
+
+[node name="Screenshot2025-11-02At4_03_15 pm" type="Sprite2D" parent="."]
+position = Vector2(654, 925)
+texture = ExtResource("3_178tx")
+
+[connection signal="pressed" from="start" to="." method="_on_start_pressed"]
