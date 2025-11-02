@@ -10,6 +10,8 @@ Concepts in quantum mechanics, such as superposition, entanglement, and measurem
 
 GD script was used for ease of creating transitions and flow between many different game states. The functions availale in the game were hardcoded to simulate the idea of superposition and not being able to change values directly in binary. The collapse funtion both ties an end to gameplay and showcases the way a wavefunction collpases into 1s and 0s when observed in a quantum computer. The aim of this game was to provide elucidation on some core quantum computing concepts through the familiar medium of a simple game: Tic-Tac-Toe
 
+Link to executables and demo video:
+https://drive.google.com/drive/folders/1mvHsZKaseRVZ_hgALsQ8prOOYt_4EzEu?usp=sharing 
 
 The game code is split into 5 .gd files:
 QQQgridsquare.gd / .tscn
